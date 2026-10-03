@@ -16,7 +16,7 @@
 </head>
 <body>
   <h1>Gizlilik Politikası — ikra</h1>
-  <p class="updated">Son güncelleme: 2 Ekim 2026</p>
+  <p class="updated">Son güncelleme: 3 Ekim 2026</p>
 
   <p><strong>ikra</strong> ("uygulama"), <strong>İlmialem Astroloji Danışmanlık Limited
   Şirketi</strong> tarafından yayınlanır; Teknopark bünyesindeki <strong>Sapphire Teknoloji</strong>
@@ -24,8 +24,9 @@
   Bu politika, uygulamanın hangi verileri işlediğini açıklar.</p>
 
   <h2>Toplanan veriler</h2>
-  <p>ikra <strong>hiçbir kişisel veri toplamaz, sunucuya göndermez veya üçüncü
-  taraflarla paylaşmaz.</strong></p>
+  <p>ikra <strong>hiçbir kişisel veri toplamaz ve üçüncü taraflarla paylaşmaz.</strong>
+  Tek istisna, aşağıda açıklanan ve yalnızca sen istediğinde çalışan yapay zekâ
+  çevirisidir.</p>
   <p>Uygulama içindeki tüm veriler — öğrenme ilerlemen, favori kelimelerin, tekrar
   durumun, günlük serin, quiz skorların ve arama geçmişin — yalnızca
   <strong>kendi cihazında</strong> saklanır. Uygulamayı sildiğinde bu veriler de silinir.
@@ -34,8 +35,22 @@
   göre Android tarafından yapılır ve cihaz ayarlarından kapatılabilir.</p>
 
   <h2>İnternet kullanımı</h2>
-  <p>Uygulama temel işlevleri için internete bağlanmaz; tamamen çevrimdışı çalışır.
-  Sesli okuma özelliği, cihazının kendi metin okuma (TTS) motorunu kullanır.</p>
+  <p>Uygulamanın tüm temel işlevleri (kartlar, sözlük, arama, kelime kelime çeviri,
+  quiz, tekrar) internetsiz çalışır. İnternet yalnızca isteğe bağlı yapay zekâ çevirisi
+  için, sen düğmeye bastığında kullanılır. Sesli okuma özelliği, cihazının kendi metin
+  okuma (TTS) motorunu kullanır.</p>
+
+  <h2>Yapay zekâ ile çeviri (isteğe bağlı)</h2>
+  <p>Ana ekrandaki aramada birden çok kelimelik bir metin yazdığında
+  <strong>"Yapay zekâ ile çevir"</strong> düğmesi görünür. Metin <strong>yalnızca sen bu
+  düğmeye bastığında</strong>, şifreli bağlantıyla (HTTPS) ikra'nın çeviri sunucusuna
+  (<code>ikra-api.ilmialemorganizasyon.com</code>, Cloudflare altyapısı) gönderilir ve
+  Cloudflare Workers AI ile çevrilir. Metin <strong>saklanmaz ve kayda geçirilmez</strong>;
+  çeviri yapıldıktan sonra sunucuda tutulmaz. Kötüye kullanımı önlemek için uygulama
+  rastgele bir <strong>kurulum kimliği</strong> üretir ve istekle birlikte gönderir. Bu
+  kimlik seni tanımlamaz, hiçbir kişisel bilgiye bağlanmaz ve sunucuda yalnızca günlük
+  istek sayısını tutmak için en fazla 2 gün saklanır. Düğmeye basmazsan internete hiçbir
+  şey gönderilmez; bu özelliği hiç kullanmayabilirsin.</p>
 
   <h2>Mikrofon ve telaffuz alıştırması</h2>
   <p>İsteğe bağlı <strong>telaffuz alıştırması</strong>, yalnızca sen mikrofona
@@ -70,8 +85,10 @@
     <li><strong>Alarmlar ve hatırlatıcılar</strong> — isteğe bağlı; hatırlatıcının tam
     saatinde gelmesi için. Vermezsen hatırlatıcı yine çalışır, birkaç dakika gecikebilir.</li>
   </ul>
-  <p>Kamera, konum, kişiler veya depolama gibi izinler istenmez. Uygulama internet
-  iznine de sahip değildir. Sesli okuma ve konuşma tanıma cihazının sistem
+  <ul>
+    <li><strong>İnternet</strong> — yalnızca yapay zekâ çevirisi için, sen düğmeye bastığında.</li>
+  </ul>
+  <p>Kamera, konum, kişiler veya depolama gibi izinler istenmez. Sesli okuma ve konuşma tanıma cihazının sistem
   servislerini kullanır.</p>
 
   <h2>Çocukların gizliliği</h2>
