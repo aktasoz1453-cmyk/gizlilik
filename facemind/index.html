@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Face Mind – KVKK Aydınlatma Metni ve Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: 2 Ekim 2026 · İletişim: <a href="mailto:omer@ilmialemorganizasyon.com">omer@ilmialemorganizasyon.com</a></p>
+  <p class="meta">Son güncelleme: 6 Ekim 2026 · İletişim: <a href="mailto:omer@ilmialemorganizasyon.com">omer@ilmialemorganizasyon.com</a></p>
   <section>
     <h2>1. Veri sorumlusu ve kapsam</h2>
     <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında Ilmialem (Face Mind uygulaması yayıncısı) tarafından, Face Mind mobil uygulamasını kullanan kişileri bilgilendirmek amacıyla hazırlanmıştır.</p>
@@ -32,16 +32,19 @@
   <section>
     <h2>2. Verilerin cihazınızda işlenmesi</h2>
     <p>Yüz ve avuç fotoğrafları yalnızca cihazınızda işlenir. Görüntü üzerinden çıkarılan ölçümler (simetri, alın oranı, çene biçimi, avuç çizgi yoğunluğu gibi 0–1 aralığında sayısal skorlar) yine cihazınızda hesaplanır.</p>
-    <p>Hiçbir fotoğraf, kamera karesi veya biyometrik şablon cihazınızdan dışarı gönderilmez; sunucuya yüklenmez, üçüncü kişilerle paylaşılmaz.</p>
+    <p>Hiçbir fotoğraf, kamera karesi veya biyometrik şablon cihazınızdan dışarı gönderilmez; sunucuya yüklenmez, üçüncü kişilerle paylaşılmaz. Tarama sırasında çekilen yüz ve avuç kareleri ölçüm alındıktan hemen sonra cihazdan da silinir; saklanmaz.</p>
     <ul>
-      <li>Profil fotoğrafı ve sevdiklerinizin fotoğrafları yalnızca cihaz depolamasında tutulur.</li>
+      <li>Profil fotoğrafı ve sevdiklerinizin fotoğrafları yalnızca cihaz depolamasında, uygulamanın kendi klasöründe tutulur.</li>
       <li>Analiz geçmişi, ruh hâli kayıtları, muhasebe cevapları, rozetler ve ayarlar cihazdaki uygulama alanında saklanır.</li>
+      <li>Veriler cihazınızda kalır ve yedeklenmez: Android’de uygulama yedeklemesi (Google yedeği, cihazdan cihaza aktarım) kapalıdır; iOS’ta analiz, not ve ayar kayıtları iCloud yedeğinden hariç tutulur. iOS’ta yalnızca profil ve Sevdiklerim fotoğrafları, açtıysanız Apple’ın şifreli cihaz yedeğine dâhil olabilir. Telefon değiştirdiğinizde veriler yeni cihaza taşınmaz.</li>
       <li>Uygulama üçüncü taraf reklam ağı kullanmaz; reklam amaçlı takip yapılmaz.</li>
     </ul>
   </section>
   <section>
     <h2>3. İsteğe bağlı yapay zekâ servisi</h2>
     <p>"Kişiselleştirilmiş Metin" onayını vermeniz hâlinde, size özel ilham metni üretmek için yapay zekâ servisine yalnızca şu veriler gönderilir: mizaç yüzdeleri, kişilik eksen skorları ve yüz/el ölçümlerinin sayısal değerleri ile seçtiğiniz takma ad. Haftalık muhasebe için yapay zekâ geri bildirimi isterseniz, o hafta yazdığınız cevaplar da gönderilir.</p>
+    <p>Metinler, veri işleyen sıfatıyla Anthropic PBC’nin Claude yapay zekâ modeli tarafından yazılır. İstekler, Cloudflare, Inc. altyapısında barındırılan sunucumuz üzerinden Anthropic’e iletilir.</p>
+    <p>Maliyeti azaltmak için sunucumuz, anonimleştirilmiş ve kabalaştırılmış (yuvarlanmış, aralıklara ayrılmış) skor profillerini ve bu profiller için üretilen metni önbellekte tutar: karakter raporlarında en fazla 180 gün, günlük ilham metinlerinde en fazla 3 gün. Önbellekte takma ad, fotoğraf, cihaz kimliği veya sizi tanımlayan başka bir kişisel veri bulunmaz; aynı kabalaştırılmış profile sahip başka bir kullanıcıya aynı metin gösterilebilir. Haftalık muhasebe cevaplarınız ve onlara yazılan geri bildirim saklanmaz; yalnızca yanıt üretilirken işlenir.</p>
     <p>Bu servise fotoğraf, ham görüntü, biyometrik şablon, doğum yılı, konum veya cihaz kimliği gönderilmez. Onay vermezseniz metinler cihaz içi hazır içerik havuzundan üretilir ve hiçbir veri gönderilmez.</p>
     <p>Onayınızı istediğiniz zaman Ayarlar ekranından geri alabilirsiniz.</p>
   </section>
@@ -52,9 +55,9 @@
   </section>
   <section>
     <h2>5. Çökme raporları (Sentry)</h2>
-    <p>Uygulamanın kararlılığını iyileştirmek için uygulama çökmeleri ve beklenmeyen hatalar Sentry hizmetine anonim olarak iletilebilir. Bu raporlar hata mesajı ve teknik hata ayrıntıları, uygulama sürümü, cihaz modeli ve işletim sistemi sürümünü içerir.</p>
+    <p>Çökme raporları isteğe bağlıdır ve varsayılan olarak kapalıdır. Yalnızca onay ekranındaki "Anonim çökme raporları gönder (isteğe bağlı)" kutusunu işaretlerseniz ya da Ayarlar › Gizlilik bölümünden açarsanız, uygulama çökmeleri ve beklenmeyen hatalar Sentry (Functional Software, Inc.) hizmetine anonim olarak iletilir. Bu raporlar hata mesajı ve teknik hata ayrıntıları, uygulama sürümü, cihaz modeli ve işletim sistemi sürümünü içerir.</p>
     <p>Çökme raporlarına fotoğraf, ekran görüntüsü, analiz skoru, takma ad, yazdığınız metinler veya kimliğinizi belirleyecek başka bir veri eklenmez.</p>
-    <p>Bu seçenek varsayılan olarak açıktır. Ayarlar › Gizlilik bölümündeki "Anonim çökme raporları gönder" anahtarını kapatarak dilediğiniz zaman durdurabilirsiniz; kapalıyken hiçbir rapor gönderilmez.</p>
+    <p>Bu tercihi Ayarlar › Gizlilik bölümündeki "Anonim çökme raporları gönder" anahtarıyla dilediğiniz zaman değiştirebilirsiniz; kapalıyken hiçbir rapor gönderilmez.</p>
   </section>
   <section>
     <h2>6. İşlenen veri kategorileri ve hukuki sebep</h2>
@@ -62,20 +65,20 @@
     <ul>
       <li>Biyometrik nitelik taşıyabilecek yüz/avuç ölçümleri — açık rızanız (KVKK m. 6/2); yalnızca cihazınızda.</li>
       <li>Takma ad, doğum yılı, notlar, ruh hâli kayıtları — açık rızanız ve uygulamanın sunulması için gerekli olması (KVKK m. 5/2-c); cihazınızda.</li>
-      <li>Yapay zekâ servisine giden sayısal skorlar ve takma ad — açık rızanız (Kişiselleştirilmiş Metin onayı).</li>
+      <li>Yapay zekâ servisine giden sayısal skorlar, takma ad ve (istenirse) muhasebe cevapları — açık rızanız (Kişiselleştirilmiş Metin onayı). Önbellekte tutulan anonim, kabalaştırılmış skor profilleri sizinle ilişkilendirilemez.</li>
       <li>Yaklaşık konum — açık rızanız; anlık kullanım, saklanmaz.</li>
-      <li>Çökme raporları — meşru menfaat (KVKK m. 5/2-f), kimlik içermez; Ayarlar › Gizlilik bölümünden kapatılabilir.</li>
+      <li>Çökme raporları — açık rızanız (isteğe bağlı, varsayılan kapalı); kimlik içermez.</li>
       <li>Premium satın alma ve abonelik kayıtları — sözleşmenin kurulması ve ifası (KVKK m. 5/2-c); rastgele oluşturulan anonim bir kullanıcı kimliğiyle.</li>
     </ul>
   </section>
   <section>
     <h2>7. Saklama süresi ve silme</h2>
-    <p>Cihazınızda tutulan veriler siz silene kadar saklanır. Ayarlar ekranındaki "Tüm Verilerimi Sil" seçeneği analizleri, geçmişi, profili, notları ve ayarları geri alınamaz biçimde siler. Uygulamayı kaldırmak da tüm yerel verileri siler.</p>
-    <p>Yapay zekâ servisine gönderilen skorlar metin üretildikten sonra tarafımızca saklanmaz. Çökme raporları en fazla 90 gün tutulur.</p>
+    <p>Cihazınızda tutulan veriler siz silene kadar saklanır. Ayarlar ekranındaki "Tüm Verilerimi Sil" seçeneği analizleri, geçmişi, profili, notları, ayarları, uygulamanın sakladığı fotoğrafları ve uygulamanın önbellekte bıraktığı kamera/görüntü dosyalarını geri alınamaz biçimde siler. Uygulamayı kaldırmak da tüm yerel verileri siler.</p>
+    <p>Yapay zekâ isteklerinde gönderilen takma ad ve muhasebe cevapları saklanmaz. Anonimleştirilmiş, kabalaştırılmış skor profilleri ve bunlar için üretilen metin, karakter raporlarında en fazla 180 gün, günlük ilham metinlerinde en fazla 3 gün önbellekte tutulur, sonra kendiliğinden silinir. Çökme raporları (açtıysanız) en fazla 90 gün tutulur.</p>
   </section>
   <section>
     <h2>8. Verilerin aktarılması</h2>
-    <p>Verileriniz satılmaz, kiralanmaz, reklam amacıyla paylaşılmaz. Yalnızca (a) açık rızanızla yapay zekâ servisine gönderilen sayısal skorlar ve takma ad, (b) açıksa çökme raporları için Sentry hizmeti, (c) Premium satın aldığınızda abonelik durumunu doğrulamak için RevenueCat hizmeti söz konusudur. Bu hizmet sağlayıcılarının sunucuları yurt dışında bulunabilir; aktarım KVKK m. 9 kapsamında açık rızanıza dayanır.</p>
+    <p>Verileriniz satılmaz, kiralanmaz, reklam amacıyla paylaşılmaz. Yalnızca şu hizmet sağlayıcılar (veri işleyenler) söz konusudur: (a) açık rızanızla yapay zekâ metni için Anthropic PBC (Claude), (b) bu isteklerin geçtiği sunucumuzun ve anonim metin önbelleğinin barındırılması için Cloudflare, Inc., (c) yalnızca açtıysanız çökme raporları için Sentry, (d) Premium satın aldığınızda abonelik durumunu doğrulamak için RevenueCat. Bu hizmet sağlayıcılarının sunucuları başta ABD olmak üzere yurt dışında bulunabilir; aktarım KVKK m. 9 kapsamında açık rızanıza dayanır.</p>
     <p>Premium ödemeleri Google Play veya App Store tarafından alınır; kart ve ödeme bilgileriniz bize ya da RevenueCat’e ulaşmaz. RevenueCat’e yalnızca rastgele oluşturulan anonim bir kullanıcı kimliği ile mağazadan gelen satın alma ve abonelik kayıtları iletilir; fotoğraf, analiz sonucu veya takma ad gönderilmez.</p>
   </section>
   <section>
@@ -93,13 +96,13 @@
   </section>
   <section>
     <h2>10. Çocuklar</h2>
-    <p>Face Mind 13 yaşın altındaki çocuklara yönelik değildir. Bu yaşın altındaki bir kullanıcıya ait veri işlendiğini fark edersek derhâl sileriz.</p>
+    <p>Face Mind 13 yaşın altındaki çocuklara yönelik değildir; kayıt sırasında doğum yılına göre 13 yaşından küçük olduğu anlaşılan kullanıcılar kabul edilmez. Bu yaşın altındaki bir kullanıcıya ait veri işlendiğini fark edersek derhâl sileriz.</p>
   </section>
   <section>
     <h2>11. Değişiklikler ve iletişim</h2>
     <p>Bu metin güncellendiğinde uygulama içindeki tarih değiştirilir ve önemli değişikliklerde uygulama açılışında bilgilendirme yapılır.</p>
     <p>Sorular, talepler ve KVKK başvuruları için: omer@ilmialemorganizasyon.com</p>
-    <p>Son güncelleme: 2 Ekim 2026</p>
+    <p>Son güncelleme: 6 Ekim 2026</p>
   </section>
 </main>
 </body>
