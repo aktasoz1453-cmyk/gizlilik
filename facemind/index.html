@@ -42,16 +42,16 @@
   </section>
   <section>
     <h2>3. İsteğe bağlı yapay zekâ servisi</h2>
-    <p>"Kişiselleştirilmiş Metin" onayını vermeniz hâlinde, size özel ilham metni üretmek için yapay zekâ servisine yalnızca şu veriler gönderilir: mizaç yüzdeleri, kişilik eksen skorları ve yüz/el ölçümlerinin sayısal değerleri ile seçtiğiniz takma ad. Haftalık muhasebe için yapay zekâ geri bildirimi isterseniz, o hafta yazdığınız cevaplar da gönderilir.</p>
-    <p>Metinler, veri işleyen sıfatıyla Anthropic PBC’nin Claude yapay zekâ modeli tarafından yazılır. İstekler, Cloudflare, Inc. altyapısında barındırılan sunucumuz üzerinden Anthropic’e iletilir.</p>
+    <p>"Kişiselleştirilmiş Metin" onayını vermeniz hâlinde, size özel metin üretmek için yapay zekâ servisine yalnızca şu veriler gönderilir (takma adınız ve fotoğraflarınız gönderilmez): mizaç yüzdeleri ve kişilik eksen skorları; karakter raporu yorumunda ayrıca yüz/avuç ölçümlerinin sayısal değerleri (simetri, alın oranı, avuç çizgi yoğunluğu gibi 0–1 aralığında skorlar); günlük ilhamda son ruh hâli seçimleriniz (ör. "sakin", "yorgun"). Haftalık muhasebe için yapay zekâ geri bildirimi isterseniz, o hafta yazdığınız cevaplar da gönderilir.</p>
+    <p>Metinler, veri işleyen sıfatıyla Anthropic PBC’nin Claude yapay zekâ modeli tarafından yazılır. İstekler, Cloudflare, Inc. altyapısında barındırılan sunucumuz üzerinden Anthropic’e iletilir. Bu hizmet sağlayıcılarının sunucuları başta ABD olmak üzere yurt dışındadır; bu yüzden onay, verilerin yurt dışına aktarılmasını da kapsar (bkz. §8).</p>
     <p>Maliyeti azaltmak için sunucumuz, anonimleştirilmiş ve kabalaştırılmış (yuvarlanmış, aralıklara ayrılmış) skor profillerini ve bu profiller için üretilen metni önbellekte tutar: karakter raporlarında en fazla 180 gün, günlük ilham metinlerinde en fazla 3 gün. Önbellekte takma ad, fotoğraf, cihaz kimliği veya sizi tanımlayan başka bir kişisel veri bulunmaz; aynı kabalaştırılmış profile sahip başka bir kullanıcıya aynı metin gösterilebilir. Haftalık muhasebe cevaplarınız ve onlara yazılan geri bildirim saklanmaz; yalnızca yanıt üretilirken işlenir.</p>
-    <p>Bu servise fotoğraf, ham görüntü, biyometrik şablon, doğum yılı, konum veya cihaz kimliği gönderilmez. Onay vermezseniz metinler cihaz içi hazır içerik havuzundan üretilir ve hiçbir veri gönderilmez.</p>
-    <p>Onayınızı istediğiniz zaman Ayarlar ekranından geri alabilirsiniz.</p>
+    <p>Bu servise fotoğraf, ham görüntü, biyometrik şablon, doğum yılı veya konum gönderilmez. Premium özellikler (karakter raporu yorumu, muhasebe geri bildirimi) istendiğinde aboneliğinizi doğrulamak için RevenueCat’in rastgele oluşturduğu anonim kullanıcı kimliği de sunucumuza iletilir; sunucumuz bu kimlikle abonelik durumunu RevenueCat’e sorar, kimliği saklamaz ve yalnızca geri döndürülemez bir özetini (SHA-256) en fazla 10 dakika kısa süreli önbellekte tutar. Kötüye kullanımı sınırlamak için IP adresiniz yalnızca istek sayacı olarak en fazla yaklaşık 10 dakika tutulur. Onay vermezseniz metinler cihaz içi hazır içerik havuzundan üretilir ve hiçbir veri gönderilmez.</p>
+    <p>Kişiselleştirilmiş Metin onayını Ayarlar › Yapay Zekâ bölümünden, tüm onaylarınızı Ayarlar › Gizlilik › "Onayımı geri çek" ile dilediğiniz zaman geri alabilirsiniz.</p>
   </section>
   <section>
     <h2>4. Bildirimler ve konum</h2>
     <p>Sabah/akşam hatırlatmaları cihaz üzerinde yerel bildirim olarak planlanır; bildirim sunucusu kullanılmaz.</p>
-    <p>Hatırlatmaları namaz vakitlerine göre ayarlamayı seçerseniz, vakitleri hesaplamak için yaklaşık (kaba) konumunuz bir kez okunur ve yalnızca cihazınızda kullanılır. Konum verisi saklanmaz ve dışarı gönderilmez. Konum izni vermezseniz sabit saatli hatırlatma kullanılır.</p>
+    <p>Hatırlatmaları namaz vakitlerine göre ayarlamayı seçerseniz, vakitleri hesaplamak için yaklaşık (kaba) konumunuz bu modu seçtiğinizde ve vakitler güncel kalsın diye uygulama her açıldığında okunur; yalnızca cihazınızda kullanılır. Konum verisi saklanmaz ve dışarı gönderilmez. Konum izni vermezseniz ya da sabit saatli hatırlatmayı seçerseniz konum okunmaz.</p>
   </section>
   <section>
     <h2>5. Çökme raporları (Sentry)</h2>
@@ -63,22 +63,24 @@
     <h2>6. İşlenen veri kategorileri ve hukuki sebep</h2>
     <p>KVKK madde 5 ve 6 uyarınca:</p>
     <ul>
-      <li>Biyometrik nitelik taşıyabilecek yüz/avuç ölçümleri — açık rızanız (KVKK m. 6/2); yalnızca cihazınızda.</li>
+      <li>Biyometrik nitelik taşıyabilecek yüz/avuç ölçümleri — açık rızanız (KVKK m. 6/2). Ölçümler cihazınızda hesaplanır ve saklanır; yalnızca Kişiselleştirilmiş Metin onayı verdiyseniz sayısal değerleri karakter raporu yorumu için yapay zekâ servisine gönderilir (bkz. §3).</li>
       <li>Takma ad, doğum yılı, notlar, ruh hâli kayıtları — açık rızanız ve uygulamanın sunulması için gerekli olması (KVKK m. 5/2-c); cihazınızda.</li>
-      <li>Yapay zekâ servisine giden sayısal skorlar, takma ad ve (istenirse) muhasebe cevapları — açık rızanız (Kişiselleştirilmiş Metin onayı). Önbellekte tutulan anonim, kabalaştırılmış skor profilleri sizinle ilişkilendirilemez.</li>
+      <li>Yapay zekâ servisine giden sayısal skorlar, ruh hâli seçimleri ve (istenirse) muhasebe cevapları — açık rızanız (Kişiselleştirilmiş Metin onayı; yurt dışına aktarım dâhil). Önbellekte tutulan anonim, kabalaştırılmış skor profilleri sizinle ilişkilendirilemez.</li>
       <li>Yaklaşık konum — açık rızanız; anlık kullanım, saklanmaz.</li>
       <li>Çökme raporları — açık rızanız (isteğe bağlı, varsayılan kapalı); kimlik içermez.</li>
       <li>Premium satın alma ve abonelik kayıtları — sözleşmenin kurulması ve ifası (KVKK m. 5/2-c); rastgele oluşturulan anonim bir kullanıcı kimliğiyle.</li>
+      <li>Premium doğrulaması için anonim kullanıcı kimliği ve kötüye kullanımı sınırlamak için IP adresi — sözleşmenin ifası ve meşru menfaat (KVKK m. 5/2-c, 5/2-f); yalnızca kısa süreli özet veya sayaç olarak.</li>
     </ul>
   </section>
   <section>
     <h2>7. Saklama süresi ve silme</h2>
     <p>Cihazınızda tutulan veriler siz silene kadar saklanır. Ayarlar ekranındaki "Tüm Verilerimi Sil" seçeneği analizleri, geçmişi, profili, notları, ayarları, uygulamanın sakladığı fotoğrafları ve uygulamanın önbellekte bıraktığı kamera/görüntü dosyalarını geri alınamaz biçimde siler. Uygulamayı kaldırmak da tüm yerel verileri siler.</p>
-    <p>Yapay zekâ isteklerinde gönderilen takma ad ve muhasebe cevapları saklanmaz. Anonimleştirilmiş, kabalaştırılmış skor profilleri ve bunlar için üretilen metin, karakter raporlarında en fazla 180 gün, günlük ilham metinlerinde en fazla 3 gün önbellekte tutulur, sonra kendiliğinden silinir. Çökme raporları (açtıysanız) en fazla 90 gün tutulur.</p>
+    <p>Yapay zekâ isteklerinde gönderilen ruh hâli seçimleri ve muhasebe cevapları saklanmaz. Anonimleştirilmiş, kabalaştırılmış skor profilleri ve bunlar için üretilen metin, karakter raporlarında en fazla 180 gün, günlük ilham metinlerinde en fazla 3 gün önbellekte tutulur, sonra kendiliğinden silinir. Premium doğrulamasında kullanılan anonim kimlik saklanmaz; yalnızca özeti en fazla 10 dakika, IP adresine bağlı istek sayaçları en fazla yaklaşık 10 dakika tutulur. Çökme raporları (açtıysanız) en fazla 90 gün tutulur.</p>
+    <p>Onayınızı Ayarlar › Gizlilik › "Onayımı geri çek" ile geri aldığınızda yapay zekâ servisine yeni veri gönderilmez ve yeni analiz için onay yeniden istenir; cihazdaki kayıtlarınızı silmek için "Tüm Verilerimi Sil" seçeneğini kullanabilirsiniz.</p>
   </section>
   <section>
     <h2>8. Verilerin aktarılması</h2>
-    <p>Verileriniz satılmaz, kiralanmaz, reklam amacıyla paylaşılmaz. Yalnızca şu hizmet sağlayıcılar (veri işleyenler) söz konusudur: (a) açık rızanızla yapay zekâ metni için Anthropic PBC (Claude), (b) bu isteklerin geçtiği sunucumuzun ve anonim metin önbelleğinin barındırılması için Cloudflare, Inc., (c) yalnızca açtıysanız çökme raporları için Sentry, (d) Premium satın aldığınızda abonelik durumunu doğrulamak için RevenueCat. Bu hizmet sağlayıcılarının sunucuları başta ABD olmak üzere yurt dışında bulunabilir; aktarım KVKK m. 9 kapsamında açık rızanıza dayanır.</p>
+    <p>Verileriniz satılmaz, kiralanmaz, reklam amacıyla paylaşılmaz. Yalnızca şu hizmet sağlayıcılar (veri işleyenler) söz konusudur: (a) açık rızanızla yapay zekâ metni için Anthropic PBC (Claude), (b) bu isteklerin geçtiği sunucumuzun ve anonim metin önbelleğinin barındırılması için Cloudflare, Inc., (c) yalnızca açtıysanız çökme raporları için Sentry, (d) Premium satın aldığınızda ve Premium yapay zekâ özelliklerini kullandığınızda abonelik durumunu doğrulamak için RevenueCat. Bu hizmet sağlayıcılarının sunucuları başta ABD olmak üzere yurt dışında bulunabilir; aktarım KVKK m. 9 kapsamında açık rızanıza dayanır.</p>
     <p>Premium ödemeleri Google Play veya App Store tarafından alınır; kart ve ödeme bilgileriniz bize ya da RevenueCat’e ulaşmaz. RevenueCat’e yalnızca rastgele oluşturulan anonim bir kullanıcı kimliği ile mağazadan gelen satın alma ve abonelik kayıtları iletilir; fotoğraf, analiz sonucu veya takma ad gönderilmez.</p>
   </section>
   <section>
